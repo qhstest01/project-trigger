@@ -53,3 +53,27 @@ integrations:
       on_success: always
       on_pull_request: always
       
+    - integrationName: email
+      type: email
+      recipients: 
+        - shiphitchcock2@gmail.com
+        - vidya@shippable.com
+      
+      on_pull_request: always
+      on_start: always
+      on_success: always
+      on_failure: always
+      
+    - integrationName: ship-hipchat
+      type: hipchat
+      recipients: 
+      #  - "#pvt-room"
+        - "@shiphitchcock2"
+      #  - "#pub-room"
+        - "#Zurtr"
+      
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
+      
